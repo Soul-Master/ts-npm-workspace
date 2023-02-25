@@ -2,20 +2,10 @@
 
 An example project that uses NPM workspaces to create a Node.js TypeScript monorepo.
 
-This project is from one of my [blog article](https://daveiscoding.com/nodejs-typescript-monorepo-via-npm-workspaces)s.
-
 ## Getting started
 
-Install dependencies
-
 ```
-npm i
-```
-
-Build the project
-
-```
-npm run build
+npm start
 ```
 
 ## Run it
@@ -23,11 +13,11 @@ npm run build
 **CLI module**
 
 ```
-npm start -w @fantastic/cli
+npm start -w @demo/cli
 ```
 
 **Web module**
 
 ```
-npm start -w @fantastic/web
+npm start -w @demo/web
 ```

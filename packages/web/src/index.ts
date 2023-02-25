@@ -1,2 +1,3 @@
-import "@fantastic/core";
+import "@demo/core";
+
 console.log("Hello from Web!");
