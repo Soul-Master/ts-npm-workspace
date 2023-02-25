@@ -21,3 +21,4 @@ jobs:
       - run: npm start
       - run: npm start -w @demo/cli
       - run: npm start -w @demo/web
+      - run: npm start --workspaces --if-present

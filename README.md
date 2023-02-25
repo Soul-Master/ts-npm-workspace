@@ -23,3 +23,9 @@ npm start -w @demo/cli
 ```
 npm start -w @demo/web
 ```
+
+**All possible packages**
+
+```
+npm start --workspaces --if-present
+```
