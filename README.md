@@ -4,6 +4,8 @@
 
 An example project that uses NPM workspaces to create a Node.js TypeScript monorepo.
 
+\* Support Node 16.13+ (LTS release) with NPM 8.1+
+
 ## Getting started
 
 ```

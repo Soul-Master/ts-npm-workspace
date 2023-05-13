@@ -1,17 +1,19 @@
 {
   "name": "demo-workspace",
   "private": "true",
+  "engines": {
+    "node": "^16.13.0 || >=18.0.0",
+    "npm": ">=8.1.0"
+  },
   "scripts": {
     "start": "npm run clean && npm install && npm run build",
     "clean": "git clean -dfx",
     "build": "tsc --build"
   },
   "workspaces": [
-    "packages/core",
-    "packages/web",
-    "packages/cli"
+    "packages/*"
   ],
   "devDependencies": {
-    "typescript": "~4.9.5"
+    "typescript": "~5.0.4"
   }
 }
