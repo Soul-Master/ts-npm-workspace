@@ -1,6 +1,7 @@
 {
   "name": "@demo/core",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "build/index.js",
   "types": "build/index.d.ts"

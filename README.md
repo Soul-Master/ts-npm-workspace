@@ -1,10 +1,20 @@
-# Example TypeScript monorepo using NPM workspaces
+# TypeScript NPM Workspace
 
-[![Node.js CI](https://github.com/Soul-Master/ts-npm-workspaces/actions/workflows/main.yml/badge.svg)](https://github.com/Soul-Master/ts-npm-workspaces/actions/workflows/main.yml)
+[![CI Status](https://github.com/Soul-Master/ts-npm-workspaces/actions/workflows/main.yml/badge.svg)](https://github.com/Soul-Master/ts-npm-workspaces/actions/workflows/main.yml)
+![Node](https://img.shields.io/badge/dynamic/json?label=node&query=$.engines.node&url=https://raw.githubusercontent.com/Soul-Master/ts-npm-workspace/main/package.json)
+![ES target](https://img.shields.io/badge/dynamic/json?label=ES&query=$.compilerOptions.target&url=https://raw.githubusercontent.com/Soul-Master/ts-npm-workspace/main/tsconfig.base.json)
 
-An example project that uses NPM workspaces to create a Node.js TypeScript monorepo.
+A minimal TypeScript monorepo showing TypeScript composite projects/NPM packages for Node.js, browser and shared environment.
 
-\* Support Node 16.13+ (LTS release) with NPM 8.1+
+```mermaid
+flowchart TD
+  core["@demo/core<br/>Shared package"]
+  cli["@demo/cli<br/>Node.js-based package"]
+  web["@demo/web<br/>Browser-based package"]
+
+  cli --> core
+  web --> core
+```
 
 ## Getting started
 

@@ -1,19 +1,19 @@
 {
-  "name": "demo-workspace",
-  "private": "true",
-  "engines": {
-    "node": "^16.13.0 || >=18.0.0",
-    "npm": ">=8.1.0"
-  },
-  "scripts": {
-    "start": "npm run clean && npm install && npm run build",
-    "clean": "git clean -dfx",
-    "build": "tsc --build"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
-  "devDependencies": {
-    "typescript": "~5.0.4"
-  }
+    "name": "ts-npm-workspace",
+    "private": "true",
+    "engines": {
+        "node": "^24.11.0 || >=26.0.0",
+        "npm": ">=11.6.2"
+    },
+    "scripts": {
+        "start": "npm run clean && npm install && npm run build",
+        "clean": "git clean -dfx",
+        "build": "tsc --build"
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "typescript": "~6.0.3"
+    }
 }
